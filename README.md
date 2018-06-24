@@ -1,4 +1,4 @@
-## Nasa viewer web-app with login 
+# Nasa viewer web-app with login 
 ## User-authentication and lots of fun stuff
 ![Nasa-logo](https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg)<br/>
 ![Mern-stack-logo](http://www.codeimmersives.com/images/logos/MERN/MERN-Logo-4-pack.jpg)
@@ -33,12 +33,11 @@ Create a user, login and get goin. <br/>Look at them pretty pictures and stuff.
 #### npm Scripts
 ##### All cmds are run from terminal in project root
 ```
-`npm start` = starts the build and serves project
-`npm run server` = runs nodemon on server only
-`npm run client` = run the react client only
-`npm run build` = create the client production build with webpack
-
-`npm run reboot` = delete latest production build and rebuild all from scratch (for this you need to clear browser cache)
+    npm start = starts the build and serves project
+    npm run server = runs nodemon on server only
+    npm run client = run the react client only
+    npm run build = create the client production build with webpack
+    npm run reboot = delete latest production build and rebuild all from scratch (for this you need to clear browser cache)
 ```
 
 and of course cred should go were cred is do:
