@@ -1,0 +1,53 @@
+{
+  "name": "stefan-nasa-viewer-mern",
+  "version": "0.1.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2lach/Nasa-application.git"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-eslint": "^8.2.3",
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "dotenv": "4.0.0",
+    "express": "^4.16.3",
+    "jest-cli": "^23.1.0",
+    "jslint": "^0.12.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.1.5",
+    "morgan": "^1.9.0",
+    "nasa-sdk": "^1.1.10",
+    "nodemon": "^1.17.5",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-full-screen": "^0.2.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "server": "nodemon ./index.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint . --fix",
+    "reboot": "rm -rf ./build/*; react-scripts build; node ./bin/www",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.1.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.9.1",
+    "tachyons": "^4.10.0"
+  }
+}

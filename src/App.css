@@ -1,0 +1,29 @@
+body {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.panel, .panel-default{
+  margin-Top:10vh;
+}
+.hide{
+  display:none;
+}
+
+
+.onItem{
+  position: absolute;
+}
+
+
+.metadata > p {
+  word-break: break-all;
+}
+
+@media screen and (max-width: 420px) {
+  .profileIcon{
+    display: none;
+  }
+  .userblock{
+    float: none;
+  }
+}
