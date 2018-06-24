@@ -1,15 +1,15 @@
-require('dotenv').load();
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+require('dotenv').load();
 
-// db connections
+//The application server config and connection to database
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 // using bluebird promises since mongoose promises have been deprecated
 mongoose.connect(process.env.MONGOLAB_URI, { promiseLibrary: require('bluebird') })
-  .then(() =>  console.log('db connection succesful', 'live at:', process.env.PORT))
+  .then(() =>  console.log('db connection succesful...\n'), console.log(`live at: http://localhost:${process.env.PORT}`))
   .catch((err) => console.error(err));
 
 var Verify = require('./routes/Verify');
@@ -39,7 +39,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.send('<h3>Well now you gone and done it, you broke the internet...</h3>'+ '<a href="/">Take me home</a><br/>' + 'the stack trace is viewable in terminal');
+  console.log('Error stack: ', err.stack);
 });
-
 module.exports = app;

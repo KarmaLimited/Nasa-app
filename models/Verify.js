@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 require('../config/passport')(passport);
 
+// initial schema for user to create bookmark
 var VerifySchema = new mongoose.Schema({
     title: String,
     author: String,

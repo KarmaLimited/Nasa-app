@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
 import '../Auth.css';
 
+// login view
 class Login extends Component {
 
   constructor() {
@@ -14,6 +14,7 @@ class Login extends Component {
       message: ''
     };
   }
+
   onChange = (e) => {
     const state = this.state;
     state[e.target.name] = e.target.value;

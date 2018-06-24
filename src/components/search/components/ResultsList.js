@@ -3,11 +3,13 @@ import Bookmark from '../../Icons/favorite_white';
 import UnBookmark from '../../Icons/favorite_black';
 import Loader from '../../cssloader/loader';
 
+
 const formatDate = (timestamp) => {
   const time = new Date(timestamp);
   return time.toDateString().slice(4);
 };
 
+// The results views of the image search api
 const ResultsList = (props) => {
   const {
     results,

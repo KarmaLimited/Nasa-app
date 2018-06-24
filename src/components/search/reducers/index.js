@@ -1,5 +1,4 @@
-import { combineReducers } from 'redux'
-
+import { combineReducers } from 'redux';
 import { 
   savedReducer, 
   resultsReducer, 
@@ -12,6 +11,6 @@ const nasaActions = combineReducers({
   page: navigationReducer,
   saved: savedReducer,
   isFetching: isFetchingReducer,
-})
+});
 
 export { nasaActions };

@@ -3,6 +3,7 @@ import axios from 'axios';
 import StartPage from './components/startpage/Nasa';
 import './App.css';
 
+// Render the startpage view APOD (A picture a day-api)
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -11,6 +12,7 @@ export default class App extends Component {
     };
   }
 
+  // verify user auth else redirect to login
   componentDidMount() {
     axios.get('/api/Verify')
       .then(res => {

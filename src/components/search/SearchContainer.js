@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Search from './Search';
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
 import { createStore, compose, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
 
@@ -11,7 +11,7 @@ class SearchContainer extends Component{
 render(){
     const initialState = {
             page: 'home'
-    }
+    };
 const store = createStore(nasaActions,
   initialState,
   compose (
@@ -26,7 +26,7 @@ console.log(store.getState());
         <Provider store={store}>
         <Search />
       </Provider>
-    )
+    );
 }
 }
 export default SearchContainer;

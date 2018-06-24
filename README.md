@@ -1,31 +1,46 @@
-## Nasa viewer app with login, authentication and lots of fun stuff
-
-#### I decided to use the MERN stack for this project
-##### M - MongoDB, E - Express, R - React, N - Node.js
+# Nasa viewer web-app with login, user-authentication and lots of fun stuff
+![Nasa-logo](https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg)
+![Mern-stack-logo](http://www.codeimmersives.com/images/logos/MERN/MERN-Logo-4-pack.jpg)
+#### Built with the MERN stack
+MERN = [**MongoDB**](https://www.mongodb.com/), [**Express**](https://expressjs.com/), [**React**](https://reactjs.org/), [**Nodejs**](https://nodejs.org/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 
-The rest i put together myself of course there where some research and inspiration involved for that i give cred to:
-djamware, AmberWilkie, DanielDeutch and some more people who wrote pretty sweet stuff on the topics i needed to learn.
+How to setup:
 
-setup:
-
-prequsits:
-node.js installed on computer
-`git clone "this repo"`<br/>
-
-cd into root of project
-`npm install`
-
-then you need to create an .env file containing
-`MONGOLAB_URI=mongodb://a-url-that-works-with-mongo`<br/>
-`PORT=1234`or it defaults too 3000 <br/>
-`SECRET=something very secret` for the Authentication process
+#### Requirement:
+node.js installed on the computer, a local instance of mongoDB or an mlabs-cluster
 <br/>
-when that is done open terminal cd into root of project and run the cmd:<br/>
-`npm start` <br/>
-this will compile the project and when it is done open your browser to:<br/>
+1) `git clone "this git repo"`<br/>
+2) cd into root of project and in the root run `npm install`
+<br/>
+3) Create an .env file in the projects root containing: <br/>
+`MONGOLAB_URI=mongodb://<user>:<password>a-mongo-uri`<br/>
+`SECRET=something very secret` for the the user authentication<br/><br/>
+
+When this is done open terminal cd into (root) project and run:<br/>
+`npm start` <br/> 
+this will compile the project and when the build is complete <br/>
+If the build was it was successful you will have no client errors and the text <br/>`db connection succesful` and the url will be shown in the terminal<br/>
+it is done open your browser to:<br/>
 `http://localhost:3000` or the port you entered in the .env file
 <br/>
-create a user, login and get goin look at them pretty pictures and stuff
+
+Then your are up and running with the Nasa-app:<br/>
+Create a user, login and get goin. Look at them pretty pictures and stuff.
+
+
+##### scripts
+all cmds are run from terminal in project root
+```
+npm start : starts the build and serves project
+npm run server: runs nodemon on server only
+npm run client: run the react client only
+npm run build: create the client production build with webpack
+
+npm run reboot: delete latest production build and rebuild all from scratch (for this you need to clear browser cache)
+```
+
+and ofcourse cred goes to:
+Daniel Cardoso, Wes bos, Daniel Deutch, @djamware, Amber Wilkie and some other good folks who wrote pretty sweet stuff on the topics i needed to learn or brusch up on.

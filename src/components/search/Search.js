@@ -6,7 +6,7 @@ import ResultsList from './components/ResultsList';
 
 import * as actions from './actions';
 
-const NasaApp = (props) => {
+const NasaSearch = (props) => {
   const {
     addNasaItem,
     searchNasa,
@@ -59,7 +59,11 @@ const NasaApp = (props) => {
       { page === 'saved' && 
           <div>
             <ResultsList
-              results={saved} page={page} saved={saved} handleDelete={deleteItem} handleSave={() => {console.log('save');}}
+              results={saved} 
+              page={page} 
+              saved={saved} 
+              handleDelete={deleteItem} 
+              handleSave={() => {console.log('item saved');}}
             />
           </div> }
     </div>
@@ -88,6 +92,6 @@ const mapDispatchToProps = dispatch => {
 const Search = connect(
   mapStateToProps,
   mapDispatchToProps
-)(NasaApp);
+)(NasaSearch);
 
 export default Search;

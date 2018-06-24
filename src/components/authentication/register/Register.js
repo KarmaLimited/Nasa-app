@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import '../Auth.css';
 
+// register view
 class CreateUser extends Component {
 
   constructor() {

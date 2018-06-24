@@ -1,5 +1,6 @@
 import React from 'react';
 
+//The input field for Searchpage
 const SearchField = (props) => {
   const {
     query,

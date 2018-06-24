@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './profile.css';
 const profile = require('../Icons/profile.png');
 
+//Profile View
+//Currently shows the Metadata of the the Bookmarked items stored in localStorage 
 class Profile extends Component {
   constructor(props) {
     super(props);
@@ -47,3 +49,5 @@ class Profile extends Component {
 }
 
 export default Profile;
+
+//TODO rebuild current bookmarks solution and render them from database in the profile-view

@@ -37,7 +37,7 @@ router.get('/', passport.authenticate('jwt', { session: false}), function(req, r
   }
 });
 // get and extract json web token
-getToken = function (headers) {
+var getToken = function (headers) {
   if (headers && headers.authorization) {
     var parted = headers.authorization.split(' ');
     if (parted.length === 2) {
@@ -49,6 +49,7 @@ getToken = function (headers) {
     return null;
   }
 };
+
 
 
 module.exports = router;

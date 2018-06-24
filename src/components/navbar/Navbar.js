@@ -7,6 +7,7 @@ import './Navbar.css';
 const profile = require('../Icons/profile.png');
 const search = require('../Icons/search.png');
 
+// The App's Navigation bar, which is only accessable if user is loggedin.
 export default class Navbar extends Component {
     state = {
         isTop: true
