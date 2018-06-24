@@ -24,7 +24,6 @@ export default class Nasa extends Component {
             startdate: '2018-06-10',
             enddate: convertDate(todaysDate),
             metadata: false,
-            //loaded: false
         };
         this.toggleClass = this.toggleClass.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -50,11 +49,9 @@ export default class Nasa extends Component {
     }
     async getData() {
         const { startdate, enddate } = this.state;
-       // this.setState({loaded:false})
         const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${NasaApiKey}&start_date=${startdate}&end_date=${enddate}&concept_tags=True`);
         const apodData = await response.json();
-       //loaded:true
-      this.setState({ post: apodData,  });
+        this.setState({ post: apodData,  });
     }
 
     render() {
@@ -64,8 +61,9 @@ export default class Nasa extends Component {
             <section className="mw7 center avenir">
          
                 <h1 className="fw1 ph3 ph0-l tc">A  Picture a day</h1>
+               
                 <h4 className="fw1 ph3 ph0-l tc">Nasa's APOD api between</h4>
-                <div className="fw1 ph3 ph0-l tc">
+                <div className="fw1 ph3 ph0-l tc ma4">
                     <b>From:</b> {startdate}  <br />
                     <b>To:</b> {this.state.enddate}<br />
                     <div className="ma2">
@@ -73,7 +71,8 @@ export default class Nasa extends Component {
                         <input type="date" className="b bg-transparent w-30 tc" min='2017-01-01' max={this.state.enddate} name="startdate" value={this.state.startdate} onChange={this.handleChange} required />
                     </div>
                 </div>
-                {/*this.state.loaded ?  <div className="tc"><Loader/></div> : */}
+            
+                {(this.state.post.length < 2) &&  <div className="tc"><Loader  /></div>}
                 {this.state.post.map(posts => (
                     <div key={key++}>
                         <article className="pa3 pa5-ns">

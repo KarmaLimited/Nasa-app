@@ -35,8 +35,8 @@ class CreateUser extends Component {
       <div className="fl w-100 pa2">
         <form className="form-signin" onSubmit={this.onSubmit}>
           <h2 className="form-signin-heading f4 fw6 ph0">Register</h2>
-          <input type="email" className="form-control pa2 input-reset mt2 ba bg-transparent hover-bg-black hover-white w-100" placeholder="Email address" name="username" value={username} onChange={this.onChange} required />
-          <input type="password" className="form-control pa2 input-reset mt2 ba bg-transparent hover-bg-black hover-white w-100" placeholder="Password" name="password" value={password} onChange={this.onChange} required />
+          <input type="email" className="form-control pa2 input-reset mt2 ba bg-transparent w-100" placeholder="Email address" name="username" value={username} onChange={this.onChange} required />
+          <input type="password" className="form-control pa2 input-reset mt2 ba bg-transparent w-100" placeholder="Password" name="password" value={password} onChange={this.onChange} required />
           <button className="b mt2 ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit">Register</button>
           <Link to="/Login" className="f6 link dim db mt2"><span aria-hidden="true"></span> Back to Login</Link>
         </form>

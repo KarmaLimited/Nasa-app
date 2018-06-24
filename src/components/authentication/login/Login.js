@@ -52,8 +52,8 @@ class Login extends Component {
           }
           <fieldset className="ba b--transparent ph0 mh0 fw6">
           <h2 className="form-signin-heading f4 fw6 ph0 mh0 mt2 fw6">Please sign in</h2>
-          <input type="email" className="b pa2 input-reset ba mt2 bg-transparent hover-bg-black w-100" placeholder="Email address" name="username" value={username} onChange={this.onChange} required/>
-          <input type="password" className="b pa2 input-reset ba mt2 bg-transparent hover-bg-black w-100" placeholder="Password" name="password" value={password} onChange={this.onChange} required/>
+          <input type="email" className="b pa2 input-reset ba mt2 bg-transparent w-100" placeholder="Email address" name="username" value={username} onChange={this.onChange} required/>
+          <input type="password" className="b pa2 input-reset ba mt2 bg-transparent w-100" placeholder="Password" name="password" value={password} onChange={this.onChange} required/>
           </fieldset>
           <button className="b mt2 ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit">Login</button>
           <p className="f6 link dim black db mt2">
