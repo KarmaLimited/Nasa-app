@@ -1,7 +1,9 @@
 # Nasa viewer web-app with login 
 ## User-authentication and lots of fun stuff
 <img alt="Nasa-logo" src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" style="margin: 0 auto;"/>
-<img alt="Mern-stack-log" src="http://www.codeimmersives.com/images/logos/MERN/MERN-Logo-4-pack.jpg" />
+<img alt="Mern-stack-log" src="http://www.codeimmersives.com/images/logos/MERN/MERN-Logo-4-pack.jpg" /> <br/>
+
+
 #### Built with the MERN stack
 MERN = [**MongoDB**](https://www.mongodb.com/), [**Express**](https://expressjs.com/), [**React**](https://reactjs.org/), [**Nodejs**](https://nodejs.org/)
 
