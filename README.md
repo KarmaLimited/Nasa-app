@@ -15,7 +15,7 @@ How to setup:
 #### Requirement:
 node.js installed on the computer, a local instance of mongoDB or an mlabs-cluster
 <br/>
-1) `git clone "this git repo"`<br/>
+1) `git clone https://github.com/2lach/Nasa-app.git`<br/>
 2) cd into root of project and in the root run `npm install`
 3) Create an .env file in the project <br/>
 `MONGOLAB_URI=mongodb://<user>:<password>a-mongo-uri`<br/>
