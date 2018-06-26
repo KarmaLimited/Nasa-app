@@ -19,10 +19,12 @@ node.js installed on the computer, a local instance of mongoDB or an mlabs-clust
 2) cd into root of project and in the root run `npm install`
 3) Create an .env file in the project <br/>
 `MONGOLAB_URI=mongodb://<user>:<password>a-mongo-uri`<br/>
-`SECRET=something very secret`<br/> for the the user authentication<br/>
+`SECRET=something very secret`<br/> for the the user authentication<br/>PORT
+`PORT=3000`
 
 When this is done open terminal cd into (root) project and run:<br/>
-`npm start` <br/> <br/> 
+`npm run build` <br/> 
+`npm start` <br/>
 this will compile the project<br/><br/>
 If the build was it was successful you will have no client or server errors the text <br/>`db connection succesful` and the url will be shown in the terminal, open your browser to:<br/>
 `http://localhost:3000` or the port number you specified in your .env file
