@@ -37,7 +37,7 @@ Create a user, login and get goin. <br/>Look at them pretty pictures and stuff.
 #### npm Scripts
 ##### All cmds are run from terminal in project root
 ```
-    npm start = starts the build and serves project
+    npm start = starts boot and debugging scripts and serves the project
     npm run server = runs nodemon on server only
     npm run client = run the react client only
     npm run build = create the client production build with webpack
