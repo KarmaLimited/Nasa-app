@@ -1,7 +1,8 @@
 # Nasa viewer web-app with login 
 ## User-authentication and lots of fun stuff
-<img alt="Nasa-logo" src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" style="margin: 0 auto;"/>
-<img alt="Mern-stack-log" src="http://www.codeimmersives.com/images/logos/MERN/MERN-Logo-4-pack.jpg" /> <br/>
+
+<img alt="Nasa-logo" src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" style=" position:absolute; z-index:1"/>
+<img alt="Mern-stack-log" src="https://res.cloudinary.com/teepublic/image/private/s--jnJZtIkV--/c_crop,x_10,y_10/c_fit,w_1134/c_crop,g_north_west,h_945,w_1260,x_-63,y_-238/co_rgb:343434,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_945,w_1260/fl_layer_apply,g_north_west,x_-63,y_-238/bo_0px_solid_white/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1500169073/production/designs/1741229_1.jpg" /> <br/>
 
 
 #### Built with the MERN stack
