@@ -19,7 +19,7 @@
     "mongoose": "^5.1.5",
     "morgan": "^1.9.1",
     "nasa-sdk": "^1.1.10",
-    "nodemon": "^1.17.5",
+    "nodemon": "^1.18.10",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "prop-types": "^15.6.2",
