@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Fullscreen from './Fullscreen';
 import Loader from '../cssloader/loader';
-const NasaApiKey = 'IiP5HLlF8H9aW5Bqe0zOorowFRbLYa4MqHQhUNgn';
+
 const todaysDate = new Date();
 
 function convertDate(date) {
